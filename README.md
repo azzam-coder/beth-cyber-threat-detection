@@ -6,7 +6,7 @@
 
 ## 📁 Project Structure
 
-beth-dataset-cyber-threat-detection/
+```beth-dataset-cyber-threat-detection/
 │
 ├── README.md
 ├── requirements.txt
@@ -45,7 +45,7 @@ beth-dataset-cyber-threat-detection/
 ├── suspicious_users.png
 ├── process_tree_heatmap.png  
 
-
+```
 ---
 
 ## 📌 Overview
