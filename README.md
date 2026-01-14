@@ -1,8 +1,10 @@
-# BETH Cyber Threat Detection
+# BETH Dataset Cyber Threat Detection
 
 **A comprehensive cybersecurity project combining SOC analysis, threat hunting, and deep learning to detect suspicious host activity using the BETH dataset.**
 
 ---
+
+## ✨ Features - SOC-style investigation of host activity - Suspicious user behavior detection - Parent/child process tree analysis - Deep learning model using PyTorch - Full detection pipeline demonstration - Visualizations for class distribution, confusion matrix, and process behavior - Clean modular code in the `src/` directory - Jupyter notebooks for step-by-step analysis ---
 
 ## 📁 Project Structure
 ```
@@ -48,39 +50,91 @@ beth-dataset-cyber-threat-detection/
 ```
 ---
 
-## 📌 Overview
-
-This project analyzes the **BETH dataset**, a real-world labeled cybersecurity dataset containing system-level events from multiple hosts.  
-It includes:
-
-- SOC-style threat analysis  
-- Parent/child process investigation  
-- Suspicious user behavior analysis  
-- Deep learning classification using PyTorch  
-- A full detection pipeline  
 
 ---
 
-## 🧠 Goals
+## 📥 Dataset
 
-- Detect suspicious host activity  
-- Understand malicious process behavior  
-- Build a machine learning model for threat detection  
-- Create a SOC-ready analysis workflow  
+This project uses the **BETH (Behavioral Event Trace Host) dataset**, available on Kaggle.
+
+The raw dataset is **not included** in this repository due to size and licensing restrictions.
+
+Download the dataset from Kaggle and place the files in: data/raw
+
+The processed file should be placed in: data/processed/combined_beth.csv
+
+
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Installation
+
+Install the required Python packages:
+pip install -r requirements.txt
+
+
+---
+
+## 🚀 How to Run
+
+1. Download the BETH dataset from Kaggle  
+2. Place raw CSV files in `data/raw/`  
+3. Place the processed file in `data/processed/`  
+4. Run the notebooks in order:
+
+   - 01_data_exploration.ipynb  
+   - 02_soc_analysis.ipynb  
+   - 03_preprocessing_and_feature_engineering.ipynb  
+   - 04_model_training_pytorch.ipynb  
+   - 05_evaluation_and_visualizations.ipynb  
+   - 06_detection_pipeline_demo.ipynb  
+
+5. (Optional) Use the Python scripts in `src/` for automation or integration into a pipeline.
+
+---
+
+## 🧠 Technologies Used
 
 - Python  
 - Pandas  
-- PyTorch  
-- Scikit-learn  
+- NumPy  
 - Matplotlib / Seaborn  
+- Scikit-learn  
+- PyTorch  
 - Jupyter Notebook  
 
 ---
 
-## 🚀 Status
+## 📊 Visuals
 
-Project in progress — notebooks and analysis being added step by step.
+The `visuals/` directory contains:
+
+- Class distribution plot  
+- Confusion matrix  
+- Suspicious user activity visualization  
+- Process tree heatmap  
+
+These help illustrate model performance and SOC findings.
+
+---
+
+## 📌 Status
+
+This project is actively being developed.  
+More analysis, visualizations, and model improvements will be added.
+
+---
+
+## 📄 License
+
+This project is for educational and cybersecurity research purposes.
+
+
+
+
+
+
+
+---
+
+
